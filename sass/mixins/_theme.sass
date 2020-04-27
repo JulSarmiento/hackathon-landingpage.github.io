@@ -1,0 +1,34 @@
+@mixin theme($name, $background, $text, $primary)
+
+  $text-inverted: invert($text)
+
+  body.#{$name}-theme 
+    background-color: $background
+
+    p, & h6
+      color: $text
+
+    nav
+      a
+        background-color: $primary
+
+    #menu
+      ul
+        background-color: $primary
+        li
+          a > i
+              color: $text-inverted
+    
+    main
+      h1
+        color: $primary
+        text-shadow: $text 2px 1px 0px
+        background: rgba($background, .7)
+    
+    #welcome
+      article
+        background: rgba($primary, .9)
+    
+    .inscription-form
+      form
+        background: rgba($primary, .9)

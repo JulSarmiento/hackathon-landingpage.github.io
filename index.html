@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='assets/styles.css'>
+        <title>HACKATHON | JulSarmiento</title>
+        <script>
+            function setTheme(mode) {
+                document.body.className = mode + '-theme'
+            }
+        </script>
+    </head>
+    <body class="light-theme">
+        <nav class="wrapper">
+            <a href="index.html">Principal</a>
+            <a href="#Bienvenido">Bienvenido</a>
+            <a href="#registro">Regístrate</a>
+            <button class="dark" onclick="setTheme('dark')">
+                <i class="fas fa-moon"></i> Modo Nocturno
+            </button>
+            <button class="light" onclick="setTheme('light')">
+                <i class="far fa-lightbulb"></i> Modo Diurno
+            </button>
+        </nav>
+
+        <aside id="menu">
+            <ul>
+                <li>
+                    <a href="//instagram.com/julsarmiento/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="//facebook.com/JulhSarmiento" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="//youtube.com/jasa1999" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="section-wrapper">
+            <h1>¡THE E-COMMERCE IS THE NEW BLACK!</h1>
+        </main>
+
+        <section id="welcome" class="section-wrapper">
+            <article>
+                <h2>¡Bienvenidos sean todos al inicio del cambio!</h2>
+                <p>
+                    Como bien sabes, la situación actual ha hecho que el comercio sufra un gran impacto en materia de sus ventas. Para nuestra nueva convocatoria se ha considerado el abrupto cambio que ha sufrido nuestro sistema comercial, pasar de vender directamente en el un local físico, con mobiliarios, personal de servicio y personal encargado de atender al consumidor directamente, a prestar un servicio virtual 100%.
+                    Por tal razón, queremos que la vida de estos emprendedores y comerciantes mejore un poco. ¡Busquemos una solución! Diseñemos un innovador e-commerce que les ayude a iniciar de forma mas amena e intuitiva, que permita el trabajo en equipo remoto y ofrezca una experiencia de usuario, por parte y parte, muy fluida.  
+                </p>
+            </article>
+        </section>
+
+        <section id="registro" class="inscription-form section-wrapper">
+            <form action="https://www.htmlquick.com/es/form-result.php?" method="POST">
+                <h2>¡Inscrite aquí!</h2>
+                <div class="flex-div">
+                    <div>
+                        <label for="username">
+                            Ingresa tu nombre: 
+                            <input id="username" type="text" name="name" placeholder="Julian Mario" required>
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <label for="userlastname">Ingresa tu apellido:</label>
+                        <input id="userlastname" type="text" name="lastname" placeholder="Perez Martinez" required>
+                    <div>
+                        <label for="useremail">Ingresa tu email:</label>
+                        <input id="useremail" type="email" name="email"  placeholder="julian_perez@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="usernphonenumber">Ingresa tu teléfono:</label>
+                        <input id="userphonenumber" type="tel" name="phonenumber" placeholder="3504506672" required>
+                    </div>
+                    <div>
+                        <label for="usercity">¿De qué ciudad eres?</label>
+                        <select name="city" id="usercity">
+                            <option hidden selected value=""></option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Bogota">Bogota</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Cúcuta">Cúcuta</option>
+                            <option value="Ibague">Ibagué</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" form="registro">Enviar</button>
+                        <button type="reset" form="registro">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="wrapper copyright">Elaborado por <a target="_blank" href="//https://github.com/JulSarmiento">@Julieth Sarmiento</a></h6>
+        </footer>
+    </body>
+</html>

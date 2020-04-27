@@ -1,0 +1,36 @@
+@import '../variables/dimmens'
+
+.wrapper 
+    margin: 0 auto
+
+.section-wrapper
+    max-width: calc(#{$max-width} - 68px)
+    margin-left: (100% - $max-width) / 2
+
+.riple, button, input[type="button"], input[type="submit"]
+    position: relative
+    transition-duration: 0.4s
+    text-decoration: none
+    overflow: hidden
+    cursor: pointer
+    outline: 0
+    border: 0
+
+    &:after 
+        content: ""
+        background: #FCF5F5
+        display: block
+        position: absolute
+        padding-top: 300%
+        padding-left: 350%
+        margin-left: -20px!important
+        margin-top: -120%
+        opacity: 0
+        transition: all 0.8s
+
+    &:active:after 
+        padding: 0
+        margin: 0
+        opacity: 1
+        transition: 0s
+    

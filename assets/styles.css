@@ -1,0 +1,240 @@
+body {
+  transition: 0.8s;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  max-width: calc(90% - 68px);
+  margin-left: 5%;
+}
+
+.riple, button, input[type=button], input[type=submit] {
+  position: relative;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}
+.riple:after, button:after, input[type=button]:after, input[type=submit]:after {
+  content: "";
+  background: #FCF5F5;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.riple:active:after, button:active:after, input[type=button]:active:after, input[type=submit]:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+nav {
+  display: flex;
+  max-width: 90%;
+}
+nav a, nav button {
+  flex: 1;
+  padding: 5px;
+  color: #efefef;
+}
+nav a {
+  text-align: center;
+  border: 1px solid;
+  text-decoration: none;
+}
+nav button.dark {
+  color: #FCF5F5;
+  background-color: #1f1d17;
+}
+nav button.light {
+  color: #1f1d17;
+  background-color: #efefef;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  margin-top: 15px;
+  right: 5%;
+}
+#menu ul {
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5em;
+  font-size: 20px;
+  list-style: none;
+}
+#menu ul li {
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  height: calc(100vh - 15px - 30px);
+  margin-top: 15px;
+  background: url("images/ecommerce-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  text-align: center;
+  font-family: "Fugaz One", cursive;
+  letter-spacing: 0.4em;
+  font-size: 2.4em;
+  max-width: 90%;
+}
+
+#welcome {
+  margin-top: -4em;
+  margin-bottom: -4em;
+  position: relative;
+}
+#welcome article {
+  padding: 2em 0;
+  margin: 0 auto;
+  max-width: 90%;
+}
+#welcome article h2 {
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+#welcome article p {
+  text-align: justify;
+  padding: 10px 30px 10px 30px;
+  font-family: "Forum", cursive;
+  letter-spacing: 0.05em;
+  font-size: 1.3em;
+}
+
+.inscription-form {
+  min-height: 100vh;
+  background: url("images/e-commerce-2.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 6em 0;
+  box-sizing: border-box;
+}
+.inscription-form form {
+  max-width: 600px;
+  width: 60%;
+  text-align: justify;
+  border: 1px solid;
+  z-index: 1000;
+  margin-left: 280px;
+}
+.inscription-form form h2 {
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2em;
+}
+.inscription-form form div {
+  margin: 10px;
+}
+.inscription-form form div label {
+  font-family: "Forum", cursive;
+  letter-spacing: 0.05em;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+.inscription-form form div input {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+}
+.inscription-form form div select {
+  margin: 0 auto;
+  width: 40%;
+}
+.inscription-form form div button {
+  display: inline-block;
+  margin: 30px;
+  width: 35%;
+}
+
+footer {
+  background: #2b2b2b;
+  padding-top: 20px;
+}
+footer .copyright {
+  padding: 15px 5%;
+  background: #151515;
+  color: white;
+}
+footer .copyright a {
+  font-weight: bold;
+  color: white;
+}
+
+body.light-theme {
+  background-color: #C5CEAE;
+}
+body.light-theme p, body.light-theme h6 {
+  color: black;
+}
+body.light-theme nav a {
+  background-color: #AB526B;
+}
+body.light-theme #menu ul {
+  background-color: #AB526B;
+}
+body.light-theme #menu ul li a > i {
+  color: white;
+}
+body.light-theme main h1 {
+  color: #AB526B;
+  text-shadow: black 2px 1px 0px;
+  background: rgba(197, 206, 174, 0.7);
+}
+body.light-theme #welcome article {
+  background: rgba(171, 82, 107, 0.9);
+}
+body.light-theme .inscription-form form {
+  background: rgba(171, 82, 107, 0.9);
+}
+
+body.dark-theme {
+  background-color: #292825;
+}
+body.dark-theme p, body.dark-theme h6 {
+  color: white;
+}
+body.dark-theme nav a {
+  background-color: gray;
+}
+body.dark-theme #menu ul {
+  background-color: gray;
+}
+body.dark-theme #menu ul li a > i {
+  color: black;
+}
+body.dark-theme main h1 {
+  color: gray;
+  text-shadow: white 2px 1px 0px;
+  background: rgba(41, 40, 37, 0.7);
+}
+body.dark-theme #welcome article {
+  background: rgba(128, 128, 128, 0.9);
+}
+body.dark-theme .inscription-form form {
+  background: rgba(128, 128, 128, 0.9);
+}
+
+/*# sourceMappingURL=styles.css.map */
